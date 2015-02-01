@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RMViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    RMViewController *rmVC;
+    rmVC = [RMViewController new];
+    [self.window setRootViewController:rmVC];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
