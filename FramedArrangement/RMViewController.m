@@ -46,9 +46,16 @@
     
 }
 
+// referenceing help code for the below
 - (void)layoutSquares
 {
-    //self.redView.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+    CGFloat superViewWidth = self.view.frame.size.width;
+    
+    self.redView.frame = CGRectMake(0, 0, superViewWidth / 2, superViewWidth /2);
+    self.greenView.frame = CGRectMake(superViewWidth / 2, 0, superViewWidth / 2, superViewWidth / 2);
+    self.blueView.frame = CGRectMake(0, superViewWidth / 2, superViewWidth / 2, superViewWidth / 2);
+    self.yellowView.frame = CGRectMake(superViewWidth / 2, superViewWidth / 2, superViewWidth / 2, superViewWidth / 2);
+    [self performSelector:@selector(layoutSquares) withObject:self afterDelay:1.0];
 }
 
 - (void)didReceiveMemoryWarning {
