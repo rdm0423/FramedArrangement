@@ -24,22 +24,22 @@
     // Do any additional setup after loading the view.
     
     self.redView = [UIView new];
-    self.redView.frame = CGRectMake(0, 0, 150, 250);
+    self.redView.frame = CGRectMake(0, 0, 160, 284);
     self.redView.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.redView];
     
     self.greenView = [UIView new];
-    self.greenView.frame = CGRectMake(0, 150, 150, 250);
+    self.greenView.frame = CGRectMake(160, 0, 160, 284);
     self.greenView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:self.greenView];
     
     self.blueView = [UIView new];
-    self.blueView.frame = CGRectMake(0, 150, 150, 250);
+    self.blueView.frame = CGRectMake(0, 284, 160, 284);
     self.blueView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:self.blueView];
     
     self.yellowView = [UIView new];
-    self.yellowView.frame = CGRectMake(0, 300, 150, 250);
+    self.yellowView.frame = CGRectMake(160, 284, 160, 284);
     self.yellowView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:self.yellowView];
     
